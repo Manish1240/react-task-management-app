@@ -5,40 +5,32 @@ const Employee = [
     "email": "employee1@example.com",
     "password": "123",
     "taskCount": { "completed": 1, "failed": 1, "accepted": 1, "newTask": 0 },
-    "tasks": [
-      {
-        "accepted": true,
-        "completed": false,
-        "failed": false,
-        "newTask": false,
-        "taskTitle": "Design Homepage",
-        "taskDescription": "Create a responsive homepage layout.",
-        "taskCategory": "Design",
-        "taskDate": "2025-03-10"
-      },
-      {
-        "accepted": false,
-        "completed": true,
-        "failed": false,
-        "newTask": false,
-        "taskTitle": "Fix Navbar Bug",
-        "taskDescription": "Resolve the issue with the navbar dropdown.",
-        "taskCategory": "Development",
-        "taskDate": "2025-03-05"
-      },
-      {
-        "accepted": false,
-        "completed": false,
-        "failed": true,
-        "newTask": false,
-        "taskTitle": "Deploy API",
-        "taskDescription": "Deploy the backend API to production.",
-        "taskCategory": "DevOps",
-        "taskDate": "2025-03-02"
-      }
-    ]
+    "tasks": []
   },
-  // Repeat similar changes for other employees...
+  {
+    "id": 2,
+    "name": "Ahmed",
+    "email": "ahmed@example.com",
+    "password": "123",
+    "taskCount": { "completed": 2, "failed": 0, "accepted": 1, "newTask": 1 },
+    "tasks": []
+  },
+  {
+    "id": 3,
+    "name": "Sarfaraz",
+    "email": "sarfaraz@example.com",
+    "password": "123",
+    "taskCount": { "completed": 1, "failed": 1, "accepted": 0, "newTask": 2 },
+    "tasks": []
+  },
+  {
+    "id": 4,
+    "name": "Ayesha",
+    "email": "ayesha@example.com",
+    "password": "123",
+    "taskCount": { "completed": 3, "failed": 0, "accepted": 1, "newTask": 0 },
+    "tasks": []
+  }
 ];
 
 const Admin = [

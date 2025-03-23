@@ -3,6 +3,7 @@ import Login from './Components/Auth/Login';
 import EmployeDashoad from './Components/Dashboad/EmployeDashoad';
 import AdminDashboad from './Components/Dashboad/AdminDashboad';
 import { AuthContext } from './Context/AuthProvider';
+import { setLocalStorage } from './Utils/LocalStorage';
 
 function App() {
   const AuthData = useContext(AuthContext);
@@ -63,7 +64,7 @@ function App() {
       };
     });
   };
-
+ setLocalStorage();
   return (
     <>
       {!user ? <Login LoginHandler={LoginHandler} /> : null}
